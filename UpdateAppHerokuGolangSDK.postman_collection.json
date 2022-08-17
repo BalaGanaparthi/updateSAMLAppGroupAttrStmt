@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "0cf6966f-3321-499c-bd42-4c70911c828a",
+		"name": "UpdateAppHerokuGolangSDK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16313791"
+	},
+	"item": [
+		{
+			"name": "https://{{heroku-app-name}}.herokuapp.com/secure/updatesamlapp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "Secure",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"star_samlp1_1\",\n    \"attributeValue\": \"ROL AER.*DVT$\"\n}"
+				},
+				"url": {
+					"raw": "https://{{heroku-app-name}}.herokuapp.com/secure/updatesamlapp",
+					"protocol": "https",
+					"host": [
+						"{{heroku-app-name}}",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"secure",
+						"updatesamlapp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
